@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500;600;700&display=swap");
+.box {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  margin-top: 5px;
+}
+.header .header-wrap .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  margin-bottom: 23px;
+}
+.header .header-wrap .navbar .location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header .header-wrap .navbar .location .city {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
+  letter-spacing: 0.1em;
+  /* black */
+  color: #000000;
+  position: relative;
+  cursor: pointer;
+}
+.header .header-wrap .navbar .location .city::after {
+  display: block;
+  content: url(../img/header/tap.svg);
+  position: absolute;
+  top: 0;
+  left: -25px;
+}
+.header .header-wrap .navbar .location .city:before {
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #b777be;
+}
+.header .header-wrap .navbar .location .city:hover:before {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  width: 100%;
+}
+.header .header-wrap .navbar .location .city-sensor {
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-left: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+.header .header-wrap .navbar .location .city-sensor .text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 15px;
+  /* identical to box height */
+  text-align: right;
+  /* link */
+  color: #b777be;
+}
+.header .header-wrap .navbar .contakt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header .header-wrap .navbar .contakt .number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+.header .header-wrap .navbar .contakt .number .text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 15px;
+  /* identical to box height */
+  text-align: right;
+  /* link */
+  color: #b777be;
+}
+.header .header-wrap .navbar .contakt .mess {
+  margin-left: 30px;
+}
+.header .header-wrap .navbar .contakt .mess a {
+  margin-left: 12px;
+}
+.header .header-wrap .headaer-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+.header .header-wrap .headaer-menu .header-menu_item a {
+  font-family: Montserrat;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.2em;
+  text-align: left;
+  color: #000000;
+  position: relative;
+}
+.header .header-wrap .headaer-menu .header-menu_item a:after {
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0%;
+  height: 1px;
+  background: #b777be;
+}
+.header .header-wrap .headaer-menu .header-menu_item a:hover:after {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  width: 100%;
+}
+
+.burger {
+  display: none;
+}
+
+@media (max-width: 785px) {
+  .symbol {
+    display: none;
+  }
+}
+@media (max-width: 585px) {
+  .location {
+    display: none;
+  }
+
+  .contakt {
+    display: none;
+  }
+
+  .headaer-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}

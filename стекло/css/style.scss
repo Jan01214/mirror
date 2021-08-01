@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+.box {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  margin-top: 5px;
+
+  .header-wrap {
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-flow: row wrap;
+      
+        margin-bottom: 23px;
+
+        .location {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .city {
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 20px;
+                /* identical to box height */
+              
+                letter-spacing: 0.1em;
+              
+                /* black */
+              
+                color: #000000;
+              
+                position: relative;
+                cursor: pointer;
+
+                
+              }
+
+              .city::after {
+                display: block;
+                content: url(../img/header/tap.svg);
+                position: absolute;
+                top: 0;
+                left: -25px;
+              }
+
+              .city:before {
+                display: block;
+                content: "";
+                position: absolute;
+                bottom: -5px;
+                left: 0;
+                width: 0%;
+                height: 2px;
+                background: #b777be;
+              }
+
+              .city:hover:before {
+                transition: all 1s;
+                width: 100%;
+              }
+
+              .city-sensor {
+                font-family: Montserrat;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 15px;
+                letter-spacing: 0em;
+                text-align: left;
+              
+                margin-left: 30px;
+              
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+
+                .text {
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 10px;
+                    line-height: 15px;
+                    /* identical to box height */
+                  
+                    text-align: right;
+                  
+                    /* link */
+                  
+                    color: #b777be;
+                  }
+              }
+          }
+
+          .symbol {
+            .symbol-img {
+            }
+        }
+
+        .contakt {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .number {
+                display: flex;
+                flex-direction: column;
+                align-items: end;
+
+                .text {
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 10px;
+                    line-height: 15px;
+                    /* identical to box height */
+                  
+                    text-align: right;
+                  
+                    /* link */
+                  
+                    color: #b777be;
+                  }
+              }
+
+              .mess {
+                margin-left: 30px;
+
+                a {
+                    margin-left: 12px;
+                  }
+              }
+          }
+      }
+
+      .headaer-menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-flow: row wrap;
+
+        .header-menu_item {
+
+             a {
+                font-family: Montserrat;
+                font-size: 13px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 16px;
+                letter-spacing: 0.2em;
+                text-align: left;
+                color: #000000;
+                position: relative;
+              }
+
+              a:after {
+                display: block;
+                content: "";
+                position: absolute;
+                bottom: -5px;
+                left: 0;
+                width: 0%;
+                height: 1px;
+                background: #b777be;
+              }
+
+                a:hover:after {
+                transition: all 1s;
+                width: 100%;
+              }
+        }
+      }
+}
+}
+
+.burger {
+  display: none;
+}
+
+@media (max-width: 785px) {
+  .symbol {
+    display: none;
+  }
+}
+@media (max-width: 585px) {
+  .location {
+    display: none;
+  }
+  .contakt {
+    display: none;
+  }
+  .headaer-menu {
+    display: flex;
+    flex-direction: column;
+  }
+  .headaer-menu_item + {
+  }
+}
