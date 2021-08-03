@@ -1,0 +1,19 @@
+@media (max-width: 795px) {
+    .symbol {
+      display: none;
+    }
+  }
+  @media (max-width: 585px) {
+    .location {
+      display: none;
+    }
+    .contakt {
+      display: none;
+    }
+    .headaer-menu {
+      display: flex;
+      flex-direction: column;
+    }
+    .headaer-menu_item + {
+    }
+  }
